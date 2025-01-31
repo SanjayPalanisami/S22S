@@ -15,7 +15,7 @@ import {
 import db from "./firebaseConfig/firebaseConfig.js";
 
 export default function ChatContainer() {
-    const socketio = useMemo(() => socketIOClient("https://s2s-gdup.onrender.com"), []);
+    const socketio = useMemo(() => socketIOClient("https://s22s-3.onrender.com"), []);
     const [chats, setChats] = useState([]);
     const [user, setUser] = useState(localStorage.getItem("user"));
     const avatar = localStorage.getItem('avatar');
